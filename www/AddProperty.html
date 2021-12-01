@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>RentalZ</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' rentalz-sanbox.vn"> -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src  'self' 'unsafe-inline' *"> -->
+    <!-- <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css"> -->
+    <!-- <script type="text/javascript" src="js/jquery.3.1.1.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/socket.io-1.0.0.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/storage.js"></script>
+    <script type="text/javascript" src="js/verification.js"></script>
+    <script type="text/javascript" src="js/config.js"></script>
+    <script type="text/javascript" src="js/index.js"></script> -->
+    <!-- <link href="lib/styles/mystyles.css" rel="stylesheet" type="text/css" /> -->
+    <link href="lib/fonts/fonts.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap stylesheet -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- font -->
+
+    <link href="css/ele-style.css" rel="stylesheet" type="text/css" />
+    <!-- stylesheet -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/responsive.css" rel="stylesheet" type="text/css" />
+    <!-- font-awesome -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <!-- crousel css -->
+    <link href="js/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css" />
+    <!--bootstrap select-->
+    <link href="js/dist/css/bootstrap-select.css" rel="stylesheet" type="text/css" />
+    <link href="js/datetimepicker/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css" />
+    <script>
+        window.name = "homepage";
+    </script>
+</head>
+<div id="top">
+    <div class="container">
+        <div id="top-links" class="nav">
+            <ul class="list-inline pull-left">
+                <li>
+                    <a href="#">Welcome to rentalz</a>
+                </li>
+                <li>
+                    <form method="post" enctype="multipart/form-data" id="form-language">
+                        <div class="btn-group">
+                            <button class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+                                Language : <span class="name"><span class="hidden-xs">English</span> <i
+                                        class="fa fa-caret-down"></i></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="javascript:;">English</a></li>
+                            </ul>
+                        </div>
+                    </form>
+                </li>
+                <li>
+                    <form method="post" enctype="multipart/form-data" id="form-currency">
+                        <div class="btn-group">
+                            <button class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+                                Currency : <span class="name"><span class="hidden-xs"> (USD)</span> <i
+                                        class="fa fa-caret-down"></i></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><button class="currency-select btn btn-link btn-block" type="button"
+                                        name="EUR">&#8364; Euro</button></li>
+                                <li><button class="currency-select btn btn-link btn-block" type="button"
+                                        name="GBP">&#163; Pound Sterling</button></li>
+                                <li><button class="currency-select btn btn-link btn-block" type="button"
+                                        name="USD">$ US Dollar</button></li>
+                            </ul>
+                        </div>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- top end here -->
+
+<!-- header start here-->
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-md-4 col-xs-12">
+                <div class="social-icon">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/" target="_blank"><i class="social_googleplus"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://in.pinterest.com/" target="_blank"><i class="fa fa-pinterest-p"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <li><a href="https://photos.google.com/" target="_blank"><i class="social_picassa"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-sm-4 col-md-4 col-xs-12">
+                <div id="logo">
+                    <a href="index.html"><img class="img-responsive" src="images/logo.png" alt="logo"
+                            title="logo" /></a>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-xs-12">
+                <div class="button-login pull-right">
+                    <button type="button" class="btn btn-default btn-lg"
+                        onclick="location.href='tour-booking-form.html'">Booking Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div id="menu">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-xs-12">
+                <nav class="navbar">
+                    <div class="navbar-header">
+                        <span class="menutext visible-xs">Menu</span>
+                        <button data-target=".navbar-ex1-collapse" data-toggle="collapse"
+                            class="btn btn-navbar navbar-toggle" type="button"><i class="fa fa-bars"
+                                aria-hidden="true"></i></button>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-ex1-collapse padd0">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown"><a href="#" class="dropdown-toggle"
+                                    data-toggle="dropdown">Manage</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="index.html"><i class="fa fa-angle-right"
+                                                aria-hidden="true"></i>AddPropertyPage</a></li>
+                                    <li><a href="Search.html"><i class="fa fa-angle-right"
+                                                aria-hidden="true"></i>SearchPage</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="ListPropertyAdded.html">List Property</a></li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<body id="page-top" class="index">
+    <div class="slice">
+        <!-- slide-detail start here -->
+        <div class="slide-detail">
+            <div class="container">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <div class="col-sm-2 wid">
+                            <h2>Please enter required fields<span class="required-field"> (*)</span></h2>
+                            <label>Attribute name<span class="required-field"> (*)</span></label>
+                            <input id="name" name="s" class="form-control" value="" placeholder="Nhập tên thuộc tính.."
+                                type="text">
+                        </div>
+                        <div class="col-sm-2 wid2">
+                            <label>Property address<span class="required-field"> (*)</span></label>
+                            <input id="address" name="s" class="form-control" value=""
+                                placeholder="Enter the address of your hotel, room for rent.." type="text">
+                        </div>
+                        <div class="col-sm-2 wid2">
+                            <label>Type of real estate<span class="required-field"> (*)</span></label>
+                            <select id="type" class="selectpicker form-control" name="location" required>
+                                <option value="1">Apartment</option>
+                                <option value="2">Hotel</option>
+                                <option value="3">Motel</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-2 wid2" style="padding-top: 10px;">
+                            <label>Bedroom<span class="required-field"> (*)</span></label>
+                            <select id="room" class="selectpicker form-control" name="location" required>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-2 wid date" style="padding-top: 10px;">
+                            <label>CreateDate<span class="required-field"> (*)</span></label>
+                            <input id="createdAt" name="s" class="form-control" value="" placeholder="DD/MM/YYYY"
+                                type="text">
+                            <button type="button" class="calender"><i class="fa fa-calendar-o"
+                                    aria-hidden="true"></i></button>
+                        </div>
+                        <div class="col-sm-3 wid2" >
+                            <label>Monthly rental price<span class="required-field"> (*)</span></label>
+                            <input id="pricePerMonth" name="s" class="form-control" value=""
+                                placeholder="Maximum budget (VND)" type="number">
+                        </div>
+                        <div class="col-sm-2 wid">
+                            <label>Types of furniture</label>
+                            <select id="furniture" class="selectpicker form-control" name="location" required>
+                                <option value="">Option</option>
+                                <option value="1">furniture</option>
+                                <option value="2">Incomplete</option>
+                                <option value="3">Partially equipped</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-2 wid2">
+                            <label>Note</label>
+                            <textarea id="noted" class="form-control" placeholder="Enter Description" name="s"
+                                rows="4" cols="50"></textarea>
+                            <!-- <input id="noted" name="s" class="form-control" value=""
+                                placeholder="Nhập thông tin ghi chú" type="text"> -->
+                        </div>
+                        <div class="col-sm-3 wid2">
+                            <form method="POST" action="ListPropertyAdded.html">
+                                <button id="confirm" class="btn-primary" type="button">Add</button>
+                            </form>
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- slide-detail end here -->
+    </div>
+</body>
+<script type="text/javascript" src="js/authentication.js"></script>
+<!-- jquery -->
+<script src="js/jquery.2.1.1.min.js"></script>
+<!-- bootstrap js -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<!--bootstrap select-->
+<script src="js/dist/js/bootstrap-select.js"></script>
+<!-- owlcarousel js -->
+<script src="js/owl-carousel/owl.carousel.min.js"></script>
+<!--internal js-->
+<script src="js/internal.js"></script>
+<!--date js-->
+<script src="js/datetimepicker/moment.js"></script>
+<script src="js/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+
+<script type="text/javascript" src="js/booking.js"></script>
+
+</html>
